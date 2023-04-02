@@ -1,4 +1,6 @@
 management:
+  server:
+    port: 9292
   endpoint:
     shutdown:
       enabled: true
@@ -8,6 +10,7 @@ management:
     web:
       exposure:
         include: "*"
+      base-path: "/manage"
   info:
     java:
       enabled: true
@@ -21,3 +24,6 @@ info:
   app:
     name: hello-actuator
     company: dy
+logging:
+  level:
+    hello.controller: debug
