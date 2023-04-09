@@ -8,8 +8,10 @@ import org.springframework.context.annotation.Import;
 
 import hello.order.v0.OrderConfigV0;
 import hello.order.v0.OrderServiceV0;
+import hello.order.v1.OrderConfigV1;
 
-@Import(OrderConfigV0.class)
+//@Import(OrderConfigV0.class)
+@Import(OrderConfigV1.class)
 @SpringBootApplication(scanBasePackages = "hello.controller")
 public class ActuatorApplication {
 
