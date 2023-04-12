@@ -10,6 +10,7 @@ import hello.order.V2.OrderConfigV2;
 import hello.order.V3.OrderConfigV3;
 import hello.order.V4.OrderConfigV4;
 import hello.order.gauge.StockConfigV1;
+import hello.order.gauge.StockConfigV2;
 import hello.order.v0.OrderConfigV0;
 import hello.order.v0.OrderServiceV0;
 import hello.order.v1.OrderConfigV1;
@@ -19,7 +20,8 @@ import hello.order.v1.OrderConfigV1;
 // @Import(OrderConfigV2.class)
 // @Import(OrderConfigV3.class)
 // @Import(OrderConfigV4.class)
-@Import({OrderConfigV4.class, StockConfigV1.class})
+// @Import({OrderConfigV4.class, StockConfigV1.class})
+@Import({OrderConfigV4.class, StockConfigV2.class})
 @SpringBootApplication(scanBasePackages = "hello.controller")
 public class ActuatorApplication {
 
