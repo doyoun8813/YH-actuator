@@ -33,7 +33,7 @@ public class StockConfigV1 {
                 log.info("stock gauge call");
                 int stock = service.getStock().get();
                 return stock;
-            });
+            }).register(registry);
         }
     }
 }
